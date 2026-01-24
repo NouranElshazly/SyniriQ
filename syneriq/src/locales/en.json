@@ -1,0 +1,233 @@
+{
+  "home": "Home",
+  "about": "About",
+  "servicesNav": "Services",
+  "contact": "Contact",
+  "getQuote": "Get a Quote",
+  "language": "Language",
+  "english": "English",
+  "arabic": "Arabic",
+
+  "notFoundTitle": "404",
+  "notFoundSubtitle": "Oops! The page you’re looking for doesn’t exist.",
+  "notFoundMessage": "It might have been moved or deleted.",
+  "goHome": "Go Home",
+
+  "heroTitle": "Smart energy for reliable, sustainable results.",
+  "heroSubtitle": "We deliver energy solutions from design and installation to maintenance to simplify operations and ensure long-term quality.",
+
+  "valuesSafety": "Safety First",
+  "valuesQuality": "Proven Quality",
+  "valuesSustainability": "Sustainable Solutions",
+  "valuesClient": "Partner-Focused",
+
+  "engServicesTitle": "Engineering Services",
+  "engServicesDesc": "From concept to execution — tailored studies, modeling, and integrated designs that ensure efficiency.",
+  "powerTitle":"Power & Energy Systems",
+  "powerDesc":"Smart diesel, hybrid, and renewable power systems delivering reliable energy for every sector.",
+  "operationTitle": "Operation & Reliability",
+  "operationDesc" :"Long-term O&M, preventive maintenance, and SLA contracts ensuring system reliability and continuity.",
+ 
+
+  "partnersTitle": "Our Partners",
+  "ctaTitle": "Ready to power your project?",
+  "ctaSubtitle": "Let’s design and deliver a reliable, sustainable solution.",
+
+  "aboutTitle": "About Us",
+  "aboutContent": "SyneriQ is a trusted provider of smart energy and engineering solutions across Saudi Arabia and the region.",
+  "aboutContent2": "  We deliver integrated services covering design, installation, maintenance, and operational support to ensure continuity and efficiency for our clients.",
+  "aboutContent3": "Our approach is built on innovation, reliability, and sustainability, offering hybrid and renewable energy systems aligned with Saudi Vision 2030.",
+  "aboutContent4":" With more than 20 years of combined expertise, we act as strategic partners empowering businesses with future-ready solutions that meet local regulations and global standards.",
+  "aboutCompanyTitle": "About Our Company",
+  "aboutCompanyDescription": "We are committed to delivering excellence in every project, combining innovation with reliability to exceed our clients' expectations.",
+
+  "contactTitle": "Contact Us",
+  "contactSubtitle": "At SyneriQ, we are always ready to support your vision — whether it’s an inquiry, a consultation, or a large-scale project. Let’s shape reliable and sustainable solutions together.",
+  "contactInfoTitle": "Contact Information",
+  "location": "Location",
+  "phone": "Phone",
+  "email": "Email",
+  "workingHours": "Working Hours",
+  "contactFormTitle": "Contact Form",
+  "formName": "Full Name",
+  "formEmail": "Email Address",
+  "formPhone": "Phone Number",
+  "formCompany": "Company Name",
+  "formService": "Service Required",
+  "formMessage": "Message",
+  "formSend": "Send Message",
+  "formSuccess": "Thanks! We’ll get back to you shortly.",
+  "contactTitle": "Contact",
+  "contact": {
+    "location": "Riyadh, Saudi Arabia",
+    "district": "",
+    "phone": "+966 549 503 824",
+    "email": "info@syneriq.com",
+    "hours": "Sunday – Thursday",
+    "hoursDetail": "8:00 AM – 5:00 PM (GMT+3)"
+  },
+
+
+
+  "engineeringDesign": "Engineering Design",
+  "engineeringDesign_intro": "End-to-end electrical, mechanical, civil, and architectural design for power systems.",
+  "electricalMechanicalCivil": "Electrical / Mechanical / Civil / Architectural",
+  "electricalMechanicalCivil_point": "Complete multi-discipline design packages.",
+  "autocad2d3d": "AutoCAD 2D/3D Drawings",
+  "autocad2d3d_point": "Production-ready 2D/3D drawings.",
+  "feasibilityStudies": "Feasibility & Efficiency Studies",
+  "feasibilityStudies_point": "Techno-economic studies and efficiency analysis.",
+ 
+  
+
+  "Explore Our Services": "Explore Our Services",
+
+  "teamTitle": "Our Team",
+  "teamTitle1" :"Behind SyneriQ is a strong team of engineers and professionals bringing decades of combined expertise",
+  "meetOurTeam": "Our team combines electrical, mechanical, civil, and architectural disciplines, supported by AutoCAD & BIM specialists and skilled technicians for installation and maintenance. Together, we deliver innovative, reliable, and future-ready energy and engineering solutions.",
+  "viewProfile": "View Profile",
+  "getInTouch": "Get In Touch",
+  "readyToWork": "Ready to Work With Us?",
+  "readyToWorkDescription": "Let's discuss how we can help bring your vision to life with our expertise and dedication.",
+
+
+
+  "footer": {
+    "description": "Leading provider of innovative energy and engineering solutions, committed to delivering sustainable and reliable services across the energy sector.",
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "contactInfo": "Contact Info",
+    "contact": {
+      "location": "Riyadh, Saudi Arabia",
+      "district": "Riyadh",
+      "phone": "+966 549 503 824",
+      "email": "info@syneriq.com",
+      "hours": "Sunday – Thursday",
+      "hoursDetail": "8:00 AM – 5:00 PM (GMT+3)"
+    },
+    "bottom": {
+      "copyright": "© {{year}} SyneriQ . All Rights Reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "careers": "Careers"
+    }
+  }, 
+  "heroChip": "Smart & Reliable Energy Partner",
+  "heroTitle": "Engineering Energy for a Sustainable Future",
+  "heroSubtitle": "Smart & reliable power & engineering solutions integrating local expertise with global standards .",
+  "exploreServices": "Explore Our Services",
+  "contactUs": "Contact Us",
+  "services": "Our Services",
+
+  "whyChooseTitle": "Why SyneriQ? Trusted Energy & Engineering Partner",
+  "whyChooseSubtitle": "Driven by Innovation, Backed by Reliability",
+  
+  "servicesTitle": "Our Core Services",
+  "servicesSubtitle": "At SyneriQ, our core services are built on five pillars that combine innovation, reliability, and sustainability — delivering complete energy and engineering solutions from start to finish.",
+  
+  "learnMore": "Learn More",
+  
+   "powerTitle": "Power & Energy Systems",
+  "powerDesc": "Smart diesel, hybrid, and renewable power systems delivering reliable energy for every sector.",
+
+  "engServicesTitle": "Engineering & Design ",
+  "engServicesDesc": "From concept to execution — tailored studies, modeling, and integrated designs that ensure efficiency. ",
+
+  "operationTitle": "Operation & Reliability",
+  "operationDesc": "Long-term O&M, preventive maintenance, and SLA contracts ensuring system reliability and continuity.",
+
+  "ctaTitle": "Ready to Start Your Next Project?",
+  "ctaSubtitle": "Contact us today and let's discuss how we can help you achieve your energy goals.",
+
+  "servicesNav": "Our Services",
+      "home": "Home",
+  
+    
+      "engineeringDesignHeroTitle": "Comprehensive engineering design services — electrical, mechanical, civil, and architectural.",
+      "engineeringDesignHeroSub": "From concept to execution drawings, we deliver reliable, code-compliant, and build-ready designs.",
+    
+      "ed_intro_left_title": "Why our design team?",
+      "ed_callout_title": "Shaping solutions today to power tomorrow",
+      "ed_callout_sub": "Saudi expertise blended with international standards — reliable, efficient, and build-ready.",
+    
+      "ed_point1": "Our engineering team is the heart of SyneriQ, with more than 15 specialized engineers covering electrical, mechanical, civil, and architectural disciplines.",
+      "ed_point2": "We provide integrated design solutions: technical studies, AutoCAD drawings, BIM modeling, and complete handover packages.",
+      "ed_point3": "With Saudi compliance and alignment to Vision 2030, our designs meet local regulations while adopting the highest global standards.",
+      "ed_point4": "Backed by 20+ years of trusted expertise, we deliver innovative and sustainable engineering solutions tailored to client needs.",
+      "ed_point5" :"We see ourselves not only as designers, but as strategic partners,supporting clients at every step with reliability and efficiency.",
+      "ed_scope_title": "What we deliver",
+      "ed_scope_sub": "Full-stack design from concept to IFC drawings, with practical constructability in mind.",
+      "ed_scope1": "Comprehensive engineering covering electrical, mechanical, civil, and architectural disciplines.",
+      "ed_scope2": "Detailed 2D/3D drawings and BIM models, ensuring precision and smooth project handover.",
+      "ed_scope3": "Practical and optimized solutions, balancing cost, performance, and constructability.",
+      "ed_scope4": "Smart engineering optimizing resources, reducing costs, and maximizing project value.",
+    
+      "ed_process_title": "Design process that fits your timelines",
+      "ed_process_p1": "We collaborate seamlessly with clients and authorities, delivering build-ready design packages that reduce rework and accelerate approvals.",
+      "ed_process_p2": " Our expertise is tailored to the Saudi market while adopting global standards, ensuring precision, reliability, and timely delivery.",
+    
+      "ed_quote_title": "Engineering today’s vision into tomorrow’s reality.",
+      "ed_quote_sub": "Let us transform your concepts into reliable, compliant, and future-ready solutions.",
+    
+      "talkToEngineer": "Talk to an engineer",
+      "seeAllServices": "See all services",
+      "startNow": "Start now",
+      "servicesEN": "All Services",
+      "ed_scope_card1": "Multidisciplinary Design",
+  "ed_scope_card2": "AutoCAD & BIM Deliverables",
+  "ed_scope_card3": "Feasibility & Efficiency",
+  "ed_scope_card4": "Value engineering",
+  "ed_deliver": "What we deliver",
+  "ed_deliver_desc": "Full-stack design from concept to IFC drawings, with practical constructability in mind.",
+  "ed_process_title": "Design process that fits your timelines",
+  "ed_process_desc": "We collaborate remotely, align with authority requirements, and deliver build-ready design packages." ,
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Explore our comprehensive power generation solutions tailored to your needs.",
+   
+    "Power & Energy Systems": {
+      "title": "Power & Energy Systems",
+      "desc": "Renewable power systems delivering reliable energy for every sector.",
+      "features": ["Smart diesel, hybrid, and renewable power systems delivering reliable energy for every sector."]
+    },
+    "engineeringDesign": {
+      "title": "Engineering & Design",
+      "desc": "From concept to execution — tailored studies, modeling, and integrated designs that ensure efficiency. ",
+      "features": ["Comprehensive studies (Electrical – Mechanical – Civil – Architectural).", "Accurate modeling with AutoCAD & BIM.", "Customized acoustic and ventilation solutions." , "Retrofit & upgrades for existing systems." ,"Cost-efficient, high-performance designs."]
+    },
+    "power":{
+      "title": "Power & Energy Systems" ,
+      "desc" : "Smart diesel, hybrid, and renewable power systems delivering reliable energy for every sector.",
+      "features" : ["Supply, Installation & Commissioning of Diesel Gensets (LV/MV)" , "Hybrid Power Systems (Diesel + Batteries) & Industrial Solar PV" , "Smart Monitoring & Control Systems" ,"Fuel Systems"]
+    },
+     
+    "operation": {
+      "title": "Operation & Reliability ",
+      "desc": "Long-term O&M, preventive maintenance, and SLA contracts ensuring system reliability and continuity.",
+      "features": ["Long-term O&M contracts ensuring continuity.", "Preventive maintenance to minimize downtime.", "Corrective maintenance when needed." , "SLA agreements for guaranteed reliability." , "24/7 customer support."]
+    },
+
+   "innov":{
+    "title" :"Innovation & Sustainability" ,
+    "desc":"Energy solutions aligned with Saudi Vision 2030 — greener, smarter, and future-ready.",
+    "features" :["Solutions aligned with Saudi Vision 2030." , "Integration of solar and hybrid systems." , "Smart technologies to reduce fuel consumption." , "Global sustainability standards adoption." , "Building a greener, smarter future."]
+
+    },
+    "partner":{
+      "title" :"Support & Partnerships" , 
+      "desc" : "Spare parts, system upgrades, and trusted collaborations with global and local partners.",
+      "features" : ["Genuine spare parts for all systems.", "System upgrades and modernizations." , "Trusted partnerships with local and global suppliers." , " Specialized technical support." , "Consistent quality and reliability."]
+    }
+    
+  } 
+}
+ 
+  
+ 
