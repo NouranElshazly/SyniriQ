@@ -34,4 +34,36 @@
     opacity: 0.3;  /* يخلي الزر باهت وهو Disabled */
     pointer-events: none;
   }
- 
+
+/* ===== RTL Global Fixes ===== */
+
+/* Flip directional icons in RTL */
+[dir="rtl"] .MuiSvgIcon-root[data-testid="ArrowForwardIcon"],
+[dir="rtl"] .MuiSvgIcon-root[data-testid="PlayArrowIcon"] {
+  transform: scaleX(-1);
+}
+
+/* Fix footer link hover in RTL */
+[dir="rtl"] .footer-link:hover {
+  transform: translateX(-4px) !important;
+}
+
+/* Fix mobile menu alignment in RTL */
+[dir="rtl"] .MuiButton-root {
+  text-align: right;
+}
+
+/* Ensure text alignment follows direction */
+[dir="rtl"] body {
+  text-align: right;
+}
+
+/* Fix swiper navigation arrows in RTL */
+[dir="rtl"] .swiper-button-next {
+  right: auto;
+  left: 10px;
+}
+[dir="rtl"] .swiper-button-prev {
+  left: auto;
+  right: 10px;
+}
