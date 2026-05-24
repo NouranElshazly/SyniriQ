@@ -37,12 +37,12 @@ const HomePage: React.FC = () => {
   const isRTL = i18n.language === 'ar';
 
   const services = [
-    { icon: <ElectricBoltIcon />, titleEN: 'Diesel Power Solutions', titleAR: 'حلول الطاقة بالديزل', image: '/energy-solutions.png' },
-    { icon: <EngineeringIcon />, titleEN: 'Installation & Commissioning', titleAR: 'التركيب والتشغيل', image: '/EngineeringServices.jpg' },
-    { icon: <BuildIcon />, titleEN: 'Maintenance & Service', titleAR: 'الصيانة والخدمة', image: '/combine-machine-service.jpg' },
-    { icon: <PowerIcon />, titleEN: 'Rental Power', titleAR: 'الطاقة الإيجارية', image: '/img1.jpg' },
-    { icon: <SpeedIcon />, titleEN: 'Load Bank Testing', titleAR: 'اختبار بنك الحمل', image: '/img2.jpg' },
-    { icon: <BoltIcon />, titleEN: 'UPS & Power Continuity', titleAR: 'UPS واستمرارية الطاقة', image: '/img3.jpg' },
+    { icon: <ElectricBoltIcon />, titleEN: 'Diesel Power Solutions', titleAR: 'حلول الطاقة بالديزل' },
+    { icon: <EngineeringIcon />, titleEN: 'Installation & Commissioning', titleAR: 'التركيب والتشغيل' },
+    { icon: <BuildIcon />, titleEN: 'Maintenance & Service', titleAR: 'الصيانة والخدمة' },
+    { icon: <PowerIcon />, titleEN: 'Rental Power', titleAR: 'الطاقة الإيجارية' },
+    { icon: <SpeedIcon />, titleEN: 'Load Bank Testing', titleAR: 'اختبار بنك الحمل' },
+    { icon: <BoltIcon />, titleEN: 'UPS & Power Continuity', titleAR: 'UPS واستمرارية الطاقة' },
   ];
 
   const whoWeArePoints = [
@@ -163,35 +163,39 @@ const HomePage: React.FC = () => {
             {services.map((svc, i) => (
               <Grid item xs={12} sm={6} md={4} key={i}>
                 <Reveal delay={i * 0.07}>
-                  <Box sx={{
-                    position: 'relative', borderRadius: 2, overflow: 'hidden', height: 240, cursor: 'pointer',
-                    '&:hover .overlay': { opacity: 1 },
-                    '&:hover img': { transform: 'scale(1.06)' },
-                  }}>
-                    <img src={svc.image} alt={isRTL ? svc.titleAR : svc.titleEN}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease', display: 'block' }} />
-                    <Box sx={{
-                      position: 'absolute', bottom: 0, left: 0, right: 0,
-                      background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)',
-                      p: 2, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between',
-                    }}>
-                      <Typography fontWeight={700} sx={{ color: '#fff', fontSize: '0.95rem' }}>
-                        {isRTL ? svc.titleAR : svc.titleEN}
-                      </Typography>
-                      <Box sx={{ bgcolor: theme.palette.primary.main, borderRadius: 1, p: 0.8, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
-                        {svc.icon}
-                      </Box>
+                  <Box
+                    component={Link}
+                    href="/services"
+                    sx={{
+                      display: 'flex', flexDirection: 'column', alignItems: 'center',
+                      textAlign: 'center', textDecoration: 'none',
+                      bgcolor: '#fff', borderRadius: 3, p: 4,
+                      border: `1.5px solid rgba(0,0,0,0.07)`,
+                      transition: 'all 0.3s ease',
+                      '&:hover': {
+                        borderColor: theme.palette.primary.main,
+                        transform: 'translateY(-6px)',
+                        boxShadow: `0 16px 40px ${alpha(theme.palette.primary.main, 0.12)}`,
+                        '& .svc-icon-wrap': { bgcolor: theme.palette.primary.main, color: '#fff' },
+                      },
+                    }}
+                  >
+                    <Box
+                      className="svc-icon-wrap"
+                      sx={{
+                        width: 72, height: 72, borderRadius: '50%',
+                        bgcolor: alpha(theme.palette.primary.main, 0.1),
+                        color: theme.palette.primary.main,
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        mb: 2.5, transition: 'all 0.3s ease',
+                        '& svg': { fontSize: 32 },
+                      }}
+                    >
+                      {svc.icon}
                     </Box>
-                    <Box className="overlay" sx={{
-                      position: 'absolute', inset: 0, opacity: 0, transition: 'opacity 0.3s',
-                      bgcolor: alpha(theme.palette.secondary.main, 0.85),
-                      display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    }}>
-                      <Button component={Link} href="/services" variant="outlined"
-                        sx={{ borderColor: '#fff', color: '#fff', fontWeight: 700, '&:hover': { bgcolor: alpha('#fff', 0.15) } }}>
-                        {isRTL ? 'اعرف أكثر' : 'Learn More'}
-                      </Button>
-                    </Box>
+                    <Typography fontWeight={700} sx={{ color: theme.palette.text.primary, fontSize: '1rem', lineHeight: 1.4 }}>
+                      {isRTL ? svc.titleAR : svc.titleEN}
+                    </Typography>
                   </Box>
                 </Reveal>
               </Grid>

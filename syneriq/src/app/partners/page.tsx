@@ -1,10 +1,10 @@
 'use client';
 import * as React from 'react';
-import { Container, Typography, Box, Grid, useTheme, alpha, Paper, Avatar } from '@mui/material';
+import Image from 'next/image';
+import { Container, Typography, Box, Grid, useTheme, alpha, Paper } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import BreadcrumbsNav from '@/components/BreadcrumbsNav';
-import HandshakeIcon from '@mui/icons-material/Handshake';
 
 export default function PartnersPage() {
     const { t, i18n } = useTranslation();
@@ -12,19 +12,15 @@ export default function PartnersPage() {
     const isRTL = i18n.language === 'ar';
 
     const partners = [
-        { name: 'Schneider Electric', descEN: 'Global specialist in energy management and automation.', descAR: 'متخصص عالمي في إدارة الطاقة والأتمتة.' },
-        { name: 'Caterpillar', descEN: 'Leading manufacturer of construction and mining equipment, diesel engines.', descAR: 'الشركة الرائدة في مجال المعدات ومحركات الديزل.' },
-        { name: 'Siemens', descEN: 'Technology company focused on industry, infrastructure, and transport.', descAR: 'شركة تكنولوجيا تركز على الصناعة والبنية التحتية.' },
-        { name: 'ABB', descEN: 'Driving the digital transformation of industries.', descAR: 'دفع التحول الرقمي في الصناعات.' },
-        { name: 'Cummins', descEN: 'Global power leader designing and manufacturing power solutions.', descAR: 'رائد عالمي في تصميم وتصنيع حلول الطاقة.' },
-        { name: 'MTU (Rolls-Royce)', descEN: 'Provider of world-class power and propulsion solutions.', descAR: 'مزود حلول الطاقة والدفع ذات المستوى العالمي.' },
-        { name: 'Volvo Penta', descEN: 'Supplier of engines and complete power systems.', descAR: 'مورد محركات وأنظمة طاقة متكاملة.' },
-        { name: 'Deep Sea Electronics', descEN: 'Generator control and automation experts.', descAR: 'خبراء التحكم في المولدات الكهربائية.' },
-        { name: 'Perkins', descEN: 'One of the world’s leading diesel engine manufacturers.', descAR: 'واحدة من الشركات الرائدة عالمياً في تصنيع محركات الديزل.' },
+        { name: 'Alimar', logo: '/logos/alimar-logo-black.png' },
+        { name: 'Pioneer Systems', logo: '/logos/Logo 6.png' },
+        { name: 'AQUA ARABIA', logo: '/logos/logo-2.png' },
+        { name: 'FEBO', logo: '/logos/logo-en.png' },
+        { name: 'Radial', logo: '/logos/radial-logo-blue.svg' },
     ];
 
     return (
-        <Box dir={i18n.dir()} sx={{ bgcolor: '#f4f6f8', minHeight: '100vh', pb: 10 }}>
+        <Box dir={i18n.dir()} sx={{ bgcolor: '#f4f6f8', minHeight: '100vh', pb: 12 }}>
 
             {/* Hero Header */}
             <Box sx={{
@@ -64,31 +60,68 @@ export default function PartnersPage() {
             </Box>
 
             {/* Breadcrumbs */}
-            <Box sx={{ transform: 'translateY(-50%)', position: 'relative', zIndex: 10 }}>
-                <Container maxWidth="lg">
-                    <Paper elevation={0} sx={{ display: 'inline-flex', px: 4, py: 1.5, borderRadius: 8, bgcolor: alpha('#fff', 0.95), backdropFilter: 'blur(10px)', boxShadow: '0 8px 30px rgba(0,0,0,0.06)' }}>
-                        <BreadcrumbsNav />
-                    </Paper>
-                </Container>
-            </Box>
+            <Container maxWidth="lg" sx={{ mt: 2, mb: 6 }}>
+                <BreadcrumbsNav />
+            </Container>
 
-            {/* Main Partners Grid */}
-            <Container maxWidth="lg" sx={{ pt: 4 }}>
-                <Grid container spacing={4}>
+            {/* Partners Grid */}
+            <Container maxWidth="lg" sx={{ pt: 2 }}>
+                <Grid container spacing={3} justifyContent="center">
                     {partners.map((partner, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index}>
-                            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1, duration: 0.5 }}>
-                                <Paper elevation={0} sx={{ p: 4, borderRadius: 4, height: '100%', bgcolor: '#fff', border: `1px solid ${theme.palette.divider}`, display: 'flex', flexDirection: 'column', transition: 'all 0.3s ease', '&:hover': { transform: 'translateY(-5px)', borderColor: theme.palette.primary.main, boxShadow: `0 12px 30px ${alpha(theme.palette.primary.main, 0.15)}` } }}>
-                                    <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                                        <Avatar sx={{ bgcolor: alpha(theme.palette.secondary.main, 0.1), color: theme.palette.secondary.main, width: 56, height: 56, mr: isRTL ? 0 : 2, ml: isRTL ? 2 : 0 }}>
-                                            <HandshakeIcon />
-                                        </Avatar>
-                                        <Typography variant="h5" fontWeight={800} color="text.primary">
-                                            {partner.name}
-                                        </Typography>
+                        <Grid item xs={6} sm={4} md={3} key={index}>
+                            <motion.div
+                                initial={{ opacity: 0, y: 24 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.08, duration: 0.45 }}
+                            >
+                                <Paper
+                                    elevation={0}
+                                    sx={{
+                                        p: 3,
+                                        borderRadius: 4,
+                                        bgcolor: '#fff',
+                                        border: `1.5px solid ${theme.palette.divider}`,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        gap: 2,
+                                        cursor: 'default',
+                                        transition: 'all 0.3s ease',
+                                        '&:hover': {
+                                            transform: 'translateY(-6px)',
+                                            borderColor: theme.palette.primary.main,
+                                            boxShadow: `0 16px 40px ${alpha(theme.palette.primary.main, 0.12)}`,
+                                        },
+                                    }}
+                                >
+                                    <Box
+                                        sx={{
+                                            width: '100%',
+                                            height: 90,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            bgcolor: alpha(theme.palette.secondary.main, 0.03),
+                                            borderRadius: 3,
+                                            p: 2,
+                                        }}
+                                    >
+                                        <Image
+                                            src={partner.logo}
+                                            alt={partner.name}
+                                            width={140}
+                                            height={60}
+                                            style={{ objectFit: 'contain', maxHeight: 60 }}
+                                        />
                                     </Box>
-                                    <Typography color="text.secondary" sx={{ fontSize: '1.05rem', lineHeight: 1.7, flexGrow: 1 }}>
-                                        {isRTL ? partner.descAR : partner.descEN}
+                                    <Typography
+                                        variant="subtitle1"
+                                        fontWeight={700}
+                                        color="text.primary"
+                                        textAlign="center"
+                                        sx={{ fontSize: '0.95rem', letterSpacing: 0.3 }}
+                                    >
+                                        {partner.name}
                                     </Typography>
                                 </Paper>
                             </motion.div>

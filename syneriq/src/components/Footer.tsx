@@ -42,7 +42,7 @@ export default function Footer() {
             {/* Company Info */}
             <Grid item xs={12} md={4}>
               <Box sx={{ mb: 3 }}>
-                <img src="/Syneriq.png" alt="SyneriQ" width={240} height={160} style={{ maxWidth: '100%', height: 'auto' }} />
+                <img src="/SyneriQ Energy2.png" alt="SyneriQ" width={240} height={160} style={{ maxWidth: '100%', height: 'auto' }} />
               </Box>
               <Typography variant="body1" sx={{ color: alpha('#ffffff', 0.85), lineHeight: 1.6, fontSize: '0.95rem', mb: 3 }}>
                 {t('footer.description')}
@@ -110,7 +110,6 @@ export default function Footer() {
                   { key: 'footer.links.home', href: '/' },
                   { key: 'footer.links.about', href: '/about' },
                   { key: 'footer.links.services', href: '/services' },
-                  { key: 'footer.links.projects', href: '/projects' },
                   { key: 'partnersTitle', href: '/partners' },
                   { key: 'footer.links.contact', href: '/contact' },
                 ].map(({ key, href }) => (

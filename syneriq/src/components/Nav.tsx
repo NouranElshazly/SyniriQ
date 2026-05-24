@@ -22,7 +22,6 @@ const topLinks = [
   { href: '/', key: 'home' },
   { href: '/about', key: 'about' },
   { href: '/services', key: 'servicesNav' },
-  { href: '/projects', key: 'projectsNav' },
   { href: '/partners', key: 'partnersTitle' },
   { href: '/contact', key: 'contactTitle' },
 ];
@@ -130,7 +129,7 @@ export default function Nav() {
             {/* Logo */}
             <Link href="/" style={{ display: 'inline-flex', alignItems: 'center' }}>
               <img
-                src="/Syneriq.png"
+                src="/SyneriQ Energy.png"
                 alt="SyneriQ"
                 style={{ height: 'auto', width: 'auto', maxHeight: 90, minHeight: 90 }}
               />

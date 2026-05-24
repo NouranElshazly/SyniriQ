@@ -4,6 +4,7 @@ import AppWrapper from '@/AppWrapper';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import EmailFab from '@/components/EmailFab';
 import { ThemeProvider, CssBaseline, Hidden } from '@mui/material';
 import { theme } from '@/lib/theme';
 
@@ -39,6 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             >
               {children}
             </div>
+
+            {/* Email FAB */}
+            <EmailFab />
 
             {/* Scroll To Top */}
             <ScrollToTop />

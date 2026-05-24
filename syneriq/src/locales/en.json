@@ -1,8 +1,10 @@
 {
   "home": "Home",
   "about": "About",
+  "partnersNav": "Partners",
   "servicesNav": "Services",
   "projectsNav": "Projects",
+  "contactNav": "Contact",
   "contact": "Contact",
   "getQuote": "Get a Quote",
   "language": "Language",
@@ -221,4 +223,8 @@
       ]
     }
   }
+  ,
+  "partnersTitle": "Our Trusted Partners",
+"partnersDesc": "We collaborate with world-class engineering and technology brands to deliver uncompromising quality and reliability.",
+"partnersSubtitle": "Success Partners"
 }
