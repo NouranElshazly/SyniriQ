@@ -1,69 +1,20 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
-
-.swiper-pagination-bullet {
-    background: #ccc !important; /* اللون الافتراضي */
-    opacity: 0.6;
-  }
-  .swiper-pagination-bullet-active {
-    background: var(--mui-palette-secondary-main) !important; /* لون الثيم */
-    opacity: 1;
-  }
-/* لون النقاط العادية */
-.swiper-pagination-bullet {
-    background: #ccc !important; /* الرمادي الافتراضي */
-    opacity: 0.6;
-  }
-  
-  /* لون النقاط النشطة */
-  .swiper-pagination-bullet-active {
-    background: #32CD32 !important; /* اللون الأساسي (مثلاً الأخضر بتاع الثيم) */
-    opacity: 1;
-  }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #32CD32 !important; /* اللون الأساسي بتاع SyneriQ */
-  }
-  
-  .swiper-button-disabled {
-    opacity: 0.3;  /* يخلي الزر باهت وهو Disabled */
-    pointer-events: none;
-  }
 
 /* ===== RTL Global Fixes ===== */
 
-/* Flip directional icons in RTL */
 [dir="rtl"] .MuiSvgIcon-root[data-testid="ArrowForwardIcon"],
 [dir="rtl"] .MuiSvgIcon-root[data-testid="PlayArrowIcon"] {
   transform: scaleX(-1);
 }
 
-/* Fix footer link hover in RTL */
 [dir="rtl"] .footer-link:hover {
   transform: translateX(-4px) !important;
 }
 
-/* Fix mobile menu alignment in RTL */
 [dir="rtl"] .MuiButton-root {
   text-align: right;
 }
 
-/* Ensure text alignment follows direction */
 [dir="rtl"] body {
   text-align: right;
-}
-
-/* Fix swiper navigation arrows in RTL */
-[dir="rtl"] .swiper-button-next {
-  right: auto;
-  left: 10px;
-}
-[dir="rtl"] .swiper-button-prev {
-  left: auto;
-  right: 10px;
 }
